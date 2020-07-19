@@ -1,0 +1,236 @@
+{
+	"debug": {
+		"mode": 0
+	},
+	"corposnake":{
+		"screen": {
+			"caption": "Corposnake",
+			"width": 960,
+			"height": 600
+		}
+	},
+	"start_screen": {
+		"fps": 2,
+		"curtain": {
+			"color_r": 0,
+			"color_g": 0,
+			"color_b": 0,
+			"alpha": 215
+		},
+		"final_score": {
+			"description": "You've earned ",
+			"currency": "$",
+			"y": 300,
+			"text_color_r": 255,
+			"text_color_g": 255,
+			"text_color_b": 255,
+			"font_size": 60
+		},
+		"first_run_images": {
+			"logo": {
+				"image_path": "images/logo.png",
+				"x": 134,
+				"y": 40
+			},
+			"credits": {
+				"image_path": "images/credits.png",
+				"x": 414,
+				"y": 572			
+			},
+			"press s": {
+				"image_path": "images/press_S.png",
+				"x": 350,
+				"y": 300	
+			}
+		},
+		"next_run_images": {
+			"fuckup": {
+				"image_path": "images/fuckup.png",
+				"x": 261,
+				"y": 40
+			},
+			"press s": {
+				"image_path": "images/press_S.png",
+				"x": 350,
+				"y": 450	
+			}
+		}
+	},
+	"game_screen":{
+		"main_game_settings":{
+			"background_image_path": "images/background_floor.png",
+			"grid_size": 30,
+			"fps": 15
+		},
+		"scoreboard": {
+			"x": 750,
+			"y": 0,
+			"image_path": "images/scoreboard.png",
+			"currency": "$",
+			"text_color_r": 255,
+			"text_color_g": 255,
+			"text_color_b": 255,
+			"font_size": 48,
+			"text_margin_right": 20
+		},
+		"obstacles":  {
+			"band_up_1":{
+				"x": 0,
+				"y": 0,
+				"image_path": "images/band_up_1.png"
+			},
+			"band_up_2":{
+				"x": 720,
+				"y": 0,
+				"image_path": "images/band_up_2.png"
+			},
+			"band_up_3":{
+				"x": 750,
+				"y": 60,
+				"image_path": "images/band_up_3.png"
+			},
+			"band_down_1":{
+				"x": 0,
+				"y": 571,
+				"image_path": "images/band_down_1.png"
+			},
+			"table_up_1":{
+				"x": 0,
+				"y": 30,
+				"image_path": "images/table_up_right_1_2.png"
+			},
+			"table_up_2":{
+				"x": 180,
+				"y": 30,
+				"image_path": "images/table_up.png"
+			},
+			"table_up_3":{
+				"x": 420,
+				"y": 30,
+				"image_path": "images/table_up.png"
+			},
+			"table_up_4_1":{
+				"x": 660,
+				"y": 30,
+				"image_path": "images/table_up_left_1_2.png"
+			},
+			"table_up_4_2":{
+				"x": 720,
+				"y": 90,
+				"image_path": "images/table_up_right_2_3.png"
+			},
+			"table_up_5":{
+				"x": 900,
+				"y": 90,
+				"image_path": "images/table_up_left_2_3.png"
+			},
+			"table_down_1":{
+				"x": 0,
+				"y": 391,
+				"image_path": "images/table_down_right_1_2.png"
+			},
+			"table_down_2":{
+				"x": 180,
+				"y": 391,
+				"image_path": "images/table_down.png"
+			},
+			"table_down_3":{
+				"x": 420,
+				"y": 391,
+				"image_path": "images/table_down.png"
+			},
+			"table_down_4":{
+				"x": 660,
+				"y": 391,
+				"image_path": "images/table_down.png"
+			},
+			"table_down_5":{
+				"x": 900,
+				"y": 391,
+				"image_path": "images/table_down_left_1_2.png"
+			}
+		},
+		"benefits": {
+			"min_lifetime": 50,
+			"max_lifetime": 150,
+			"benefit_quantity": 3,
+			"penalty_probability": 0.2,
+			"prizes_list": {
+				"apple": {
+					"image": "images/prize_apple.png",
+					"price": 0.7
+				},
+				"banana": {
+					"image": "images/prize_banana.png",
+					"price": 1.0
+				},
+				"pear": {
+					"image": "images/prize_pear.png",
+					"price": 0.8
+				},
+				"pencil": {
+					"image": "images/prize_pencil.png",
+					"price": 0.16
+				},
+				"toilet_paper": {
+					"image": "images/prize_toilet_paper.png",
+					"price": 1.3
+				},
+				"paperclip": {
+					"image": "images/prize_paperclip.png",
+					"price": 0.03
+				},
+				"coffee": {
+					"image": "images/prize_coffee.png",
+					"price": 0.6
+				}
+			},
+			"penalties_list": {
+				"mail": {
+					"image": "images/penalty_mail.png",
+					"speed": 1.2
+					
+				}
+			}
+		},
+		"snake": {
+			"step_length": 10,
+			"starting_position_x": 480,
+			"starting_position_y": 300,
+			"direction": "right",
+			"snake_elements": {
+				"snake_element_1": {
+					"step_1": "images/snake_element_1_step_1.png",
+					"step_2": "images/snake_element_1_step_2.png",
+					"step_3": "images/snake_element_1_step_3.png",
+					"step_4": "images/snake_element_1_step_4.png"
+				},
+				"snake_element_2": {
+					"step_1": "images/snake_element_2_step_1.png",
+					"step_2": "images/snake_element_2_step_2.png",
+					"step_3": "images/snake_element_2_step_3.png",
+					"step_4": "images/snake_element_2_step_4.png"
+				},
+				"snake_element_3": {
+					"step_1": "images/snake_element_3_step_1.png",
+					"step_2": "images/snake_element_3_step_2.png",
+					"step_3": "images/snake_element_3_step_3.png",
+					"step_4": "images/snake_element_3_step_4.png"
+				},
+				"snake_element_4": {
+					"step_1": "images/snake_element_4_step_1.png",
+					"step_2": "images/snake_element_4_step_2.png",
+					"step_3": "images/snake_element_4_step_3.png",
+					"step_4": "images/snake_element_4_step_4.png"
+				},
+				"snake_element_5": {
+					"step_1": "images/snake_element_5_step_1.png",
+					"step_2": "images/snake_element_5_step_2.png",
+					"step_3": "images/snake_element_5_step_3.png",
+					"step_4": "images/snake_element_5_step_4.png"
+				}
+			}
+		}
+
+	}
+}
