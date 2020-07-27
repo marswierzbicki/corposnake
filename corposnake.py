@@ -38,6 +38,8 @@ try:
         start_screen = StartScreen(screen, settings, game_screen)
         start_screen.show_screen(score)
         score = game_screen.play_game()
+except SystemExit:
+	pass
 except:
     if debug_mode == 1:
         traceback.print_exc()
